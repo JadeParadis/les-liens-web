@@ -88,12 +88,46 @@ h2 span {
    align-items: center;
    gap: 20px;
 }
-
-.images a {
+.images img {
    width: 100%;
+   
+   margin-bottom: 10px;
+}
+.images a {
    margin: 10px 0px;
    text-align: center;
-   padding: 0px 0px 10px 0px;
+}
+
+.sports {
+   background-image: url('../images/fond/bicycles.png');
+} 
+
+.web {
+   background-image:  url('../images/fond/science.png');
+   
+}
+
+.web img {
+   width: 50%;
+}   
+
+.web .images a {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin-bottom: 50px;
+}
+
+
+
+.web .lien_float {
+    background-color: darkred;
+    
+    display: flex;
+    justify-content: center;
+}
+.web .lien_float a {
+   margin: 10px;
 }
 /*------------------------------------------------------------------------------
    Mise en page
