@@ -60,6 +60,7 @@ header {
    position: relative;
 
 }
+
 header a {
 
    position: absolute;
@@ -67,9 +68,33 @@ header a {
 }
 
 header h1 {
-   
+   font: 400 6.25rem "Monoton", serif;
 }
 
+h2 {
+   font: 400 2rem "Monoton", serif;
+   margin: 0;
+   text-transform: uppercase;
+}
+
+h2 span {
+   font: 1.063rem "Oranienbaum", serif;
+   text-transform: none;
+}
+
+.images {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+.images a {
+   width: 100%;
+   margin: 10px 0px;
+   text-align: center;
+   padding: 0px 0px 10px 0px;
+}
 /*------------------------------------------------------------------------------
    Mise en page
 ------------------------------------------------------------------------------*/
