@@ -16,8 +16,56 @@ html {
    Base
 ------------------------------------------------------------------------------*/
 body {
-   background: url("../images/fond/global.png") repeat;
+   background: black url("../images/fond/global.png") repeat;
+   font-family: "Oranienbaum", serif;
+   color:white;
 }
+body a {
+   color: white;
+   text-decoration: none;
+}
+
+body a:hover {
+   color: darkorange;
+}
+header, section {
+   min-height: 100vh;
+}
+
+.boite {
+   width: 800px;
+   padding: 48px;
+   background-color: rgba(0, 0, 0, 0.8);
+   border-radius: 10px;
+   
+
+
+}
+
+header div {
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   flex-direction: column;
+   text-align: center;
+   
+}
+
+header {
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   flex-direction: column;
+   text-align: center;
+   position: relative;
+
+}
+header a {
+
+   position: absolute;
+   bottom: 40px;
+}
+
 /*------------------------------------------------------------------------------
    Mise en page
 ------------------------------------------------------------------------------*/
