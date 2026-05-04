@@ -3,13 +3,13 @@
 ----------------------------------------------------------------------------*/
 
 html {
-  box-sizing: border-box;
+   box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+   box-sizing: inherit;
 }
 
 /*------------------------------------------------------------------------------
@@ -18,8 +18,9 @@ html {
 body {
    background: black url("../images/fond/global.png") repeat;
    font-family: "Oranienbaum", serif;
-   color:white;
+   color: white;
 }
+
 body a {
    color: white;
    text-decoration: none;
@@ -28,7 +29,22 @@ body a {
 body a:hover {
    color: darkorange;
 }
-header, section {
+
+/*------------------------------------------------------------------------------
+   Mise en page
+------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------
+    Elements
+----------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------
+   Components
+------------------------------------------------------------------------------*/
+
+/* Header */
+header,
+section {
    min-height: 100vh;
 }
 
@@ -37,7 +53,7 @@ header, section {
    padding: 48px;
    background-color: rgba(0, 0, 0, 0.8);
    border-radius: 10px;
-   
+
 
 
 }
@@ -45,16 +61,16 @@ header, section {
 header div {
    display: flex;
    justify-content: center;
-   align-items:center;
+   align-items: center;
    flex-direction: column;
    text-align: center;
-   
+
 }
 
 header {
    display: flex;
    justify-content: center;
-   align-items:center;
+   align-items: center;
    flex-direction: column;
    text-align: center;
    position: relative;
@@ -71,6 +87,8 @@ header h1 {
    font: 400 6.25rem "Monoton", serif;
 }
 
+
+/* Section Générale */
 h2 {
    font: 400 2rem "Monoton", serif;
    margin: 0;
@@ -82,17 +100,22 @@ h2 span {
    text-transform: none;
 }
 
+
+
+/* Section sports */
 .images {
    display: flex;
    justify-content: center;
    align-items: center;
    gap: 20px;
 }
+
 .images img {
    width: 100%;
-   
+
    margin-bottom: 10px;
 }
+
 .images a {
    margin: 10px 0px;
    text-align: center;
@@ -100,16 +123,18 @@ h2 span {
 
 .sports {
    background-image: url('../images/fond/bicycles.png');
-} 
+}
 
+
+/* Section web */
 .web {
-   background-image:  url('../images/fond/science.png');
-   
+   background-image: url('../images/fond/science.png');
+
 }
 
 .web img {
    width: 50%;
-}   
+}
 
 .web .images a {
    display: flex;
@@ -121,34 +146,42 @@ h2 span {
 
 
 .web .lien_float {
-    background-color: darkred;
-    
-    display: flex;
-    justify-content: center;
+   background-color: darkred;
+
+   display: flex;
+   justify-content: center;
 }
+
 .web .lien_float a {
    margin: 10px;
 }
-/*------------------------------------------------------------------------------
-   Mise en page
-------------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------------
-    Elements
-----------------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------------------
-   Components
-------------------------------------------------------------------------------*/
-
-/* Header */
-
-/* Section Générale */
-
-/* Section sports */
-
-/* Section web */
 
 /* Section photographie */
+.photos {
+   background: url(../images/fond/fond.jpg) no-repeat;
+   background-size: cover;
+}
+
+.photos img {
+   width: 30%;
+   margin: 0;
+}
+
+.photos a {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   padding: 10px;
+   margin: 0px;
+}
+
+.photos .images {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
 
 /* Bouton retour */
